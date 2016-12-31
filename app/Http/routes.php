@@ -28,4 +28,8 @@ Route::get('/', function () {
 
 Route::group(['middleware' => ['web']], function () {
     //
+require __DIR__.'/admin_routes.php';
 });
+
+/* ================== Homepage + Admin Routes ================== */
+
